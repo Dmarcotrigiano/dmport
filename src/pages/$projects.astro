@@ -7,11 +7,13 @@ import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
 let { collection } = Astro.props;
 export async function createCollection() {
   return {
-    async data() {
+    async data({params}) {
       const projects = Astro.fetchContent('./project/*.md');
-      projects.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
-      return projects.filter(({ published_at }) => !!published_at);
-    }
+      return projects
+    },
+    pageSize: 25,
+    routes: [],
+    permalink: ({ params }) => `/tag/${params.tag}`
   }
 }
 ---

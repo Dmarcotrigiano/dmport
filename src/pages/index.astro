@@ -6,7 +6,6 @@ import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import PorfolioPreview from '../components/PortfolioPreview/index.jsx';
 import ThreeWater from '../components/ThreeWater/index.jsx';
-import process from 'node:process';
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
 const featuredProject = projects[0];
@@ -180,6 +179,7 @@ const featuredProject = projects[0];
         }
       }
     </style>
+
   </head>
   <body>
     <Nav />

@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/mentor.astro
-title: Facebook API
+title: Thomas Daley
 client: Self
 published-at: 2020-03-04 00:00:00
-img: /assets/facebook-developers.jpg
+img: null
 description: |
   Thomas Daley is a current RIT student and Mentee!
 tags:
@@ -11,10 +11,12 @@ tags:
   - University
 ---
 
-During this project I had to onboard quickly as analytics were being impacted drastically due to diagnosed duplicate event errors. The client, Andrew, was using Google Tag Manager which was a technology I had not worked with before, however, before accepting the offer I conducted research on the program and found that the documentation was thorough enough for me to utilize with no delay.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et hendrerit nibh. Ut sit amet tristique dui. Donec auctor enim eu odio lobortis tempor. In semper vestibulum purus eget gravida. Suspendisse potenti. Quisque orci diam, auctor non orci eget, consectetur consectetur urna. Vestibulum gravida nisi sed cursus vestibulum. Aliquam ut elit iaculis, vehicula leo et, varius velit. Nunc et volutpat est, a placerat erat. Suspendisse vulputate sed magna eget vehicula. Aliquam odio libero, aliquet id euismod quis, placerat at felis.
 
-Deduplication issues are often caused by the event not having a universally unique identifier or UUID associated with it. This prevents the advertising software from disambiguating two events which may have the same format, but are discrete events from two customers. Naturally this is of large concern to advertisers in a evermore competitive market, and this was what I resolved for my client. I then explained the issue, and how to prevent such issues from arising in the future.
+Nullam varius lorem sed risus ornare pretium. Ut hendrerit quam sapien, rutrum euismod quam convallis at. Duis quis egestas dui, sit amet dictum tortor. Duis varius posuere egestas. Nunc convallis sit amet justo quis accumsan. Donec imperdiet consectetur scelerisque. Donec enim augue, porttitor at nulla in, tristique interdum mi. Duis porta feugiat felis nec sollicitudin. Nam volutpat libero nec velit laoreet, et finibus velit tristique. Vestibulum dictum convallis lectus, nec sollicitudin tellus elementum vel. Donec sit amet dolor velit. Suspendisse euismod ornare erat, et sodales metus fermentum rhoncus. Mauris nec magna sodales, mattis erat at, dapibus ex.
 
-Andrew left me the following review:
+Donec molestie nibh id purus efficitur feugiat. Nunc in pharetra sem. In pharetra, risus eu egestas tempus, odio purus cursus neque, eu convallis nisi nulla sit amet nulla. Suspendisse potenti. Ut ac dolor nec ligula dapibus maximus sed sed ligula. Donec eu venenatis eros. Vivamus rutrum tempor nunc, quis ultricies tortor tincidunt quis. Quisque id leo et justo malesuada commodo non non libero. Morbi lacinia urna purus, vel luctus ex sodales blandit. Sed a neque molestie, vulputate erat vel, consectetur neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod in magna eget suscipit. Integer vitae eros ac mauris pretium lobortis.
 
-"Daniel was great to work with. Right out of the gate he worked to understand the issue, research the appropriate fix and implement in a timely solution. He was very good with communicating his work and explaining the issues/updates to a more “non-technical” person, like myself. I’d highly recommend him for any development work. Will be working with him again!" -Andrew M.
+Aliquam eu nibh vel nisl efficitur ullamcorper id eget nisl. Morbi id neque justo. Quisque a nibh sagittis, placerat metus a, egestas ante. Aliquam iaculis tempor ex rhoncus vulputate. In hac habitasse platea dictumst. Quisque aliquet ex sit amet tortor vestibulum, nec lacinia nulla aliquet. Maecenas elementum nibh et lectus rutrum porta.
+
+Nam ut lacus tincidunt, interdum magna sed, pharetra justo. Morbi dignissim nec odio nec dapibus. Suspendisse potenti. Duis lacinia ipsum mauris, nec posuere eros vulputate id. Suspendisse potenti. Proin a sem sodales, tincidunt metus nec, venenatis eros. In vestibulum lorem lacus, id efficitur orci tempus a.

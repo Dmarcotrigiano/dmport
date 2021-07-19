@@ -4,7 +4,7 @@ import Styles from "./styles.module.scss";
 function Nav() {
   return (
     <nav className={Styles.nav}>
-      <a className={Styles.logolink} href="/">
+      <a className={Styles.logolink} href="/" id="logo">
         <div className={Styles.monogram}>DM</div>
       </a>
       <a className={Styles.link} href="/projects">

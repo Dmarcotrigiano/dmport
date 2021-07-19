@@ -5,25 +5,23 @@
   padding-right: 2rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-}
-@media (max-width: 600px) {
-  .nav .a:not(:first-child) {
-    display: none;
-  }
-  .nav .a {
-    display: block;
+  @media (max-width: 767px) {
+    .a:not(:first-child) {
+      display: none;
+    }
+    .a {
+      display: block;
+    }
   }
 }
 
 .logolink {
-  display: block;
   color: var(--t-fg);
   text-decoration: none;
 }
 
 .link {
   color: var(--t-subdue);
-  display: block;
   margin-left: 1rem;
   text-decoration: none;
   font-size: var(--f-d1);
@@ -52,7 +50,6 @@
 }
 
 .social {
-  display: block;
   margin-left: auto;
 
   + .social {

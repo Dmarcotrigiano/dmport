@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/mentor.astro
-title: Facebook API
+title: Aaron Shotwell
 client: Self
 published-at: 2020-03-04 00:00:00
-img: /assets/facebook-developers.jpg
+img: null
 description: |
   Aaron Shotwell is a self-taught developer and current Mentee, coming from C to JavaScript.
 tags:

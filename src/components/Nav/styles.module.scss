@@ -6,6 +6,14 @@
   padding-bottom: 1rem;
   padding-left: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {
+    display: none;
+  }
+  .nav a.link {
+    display: block;
+  }
+}
 
 .logolink {
   display: block;

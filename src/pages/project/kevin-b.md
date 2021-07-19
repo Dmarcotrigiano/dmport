@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: WordPress Migration
 client: Self
 published-at: 2020-03-04 00:00:00
-img: /assets/wordpress.jpeg
+img: /assets/wordpress2.jpeg
 description: |
   Kevin B. remarked on my professionalism.
 tags:

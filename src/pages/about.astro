@@ -9,6 +9,7 @@ import Nav from '../components/Nav/index.jsx';
   <head>
     <MainHead title="About | Jeanine White" />
     <style lang="scss">
+    $w-s: 750px;
       .heroImg {
         object-fit: cover;
 
@@ -22,6 +23,67 @@ import Nav from '../components/Nav/index.jsx';
         font-size: var(--f-u1);
         line-height: 2;
       }
+      .btn-wrapper {
+        display: flex;
+        margin-left: auto; 
+        margin-right: auto;
+      }
+      .invert {
+        position: absolute;
+        color: var(--t-fg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
+        transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
+      }
+      .role {
+        position: relative;
+        display: inline-block;
+        font-weight: 900;
+        color: var(--t-bg);
+        background-color: var(--t-fg);
+        padding: 0.25em 0.5em;
+        z-index: 2;
+        align-self: center;
+
+        @media (min-width: $w-s) {
+          font-size: var(--f-u3);
+        }
+
+        + .role {
+          margin-left: 1em;
+        }
+
+        &:nth-of-type(1) {
+          .invert {
+            background-color: var(--c-pink);
+          }
+        }
+
+        &:nth-of-type(2) {
+          .invert {
+            background-color: var(--c-blue);
+          }
+        }
+
+        &:nth-of-type(3) {
+          .invert {
+            background-color: var(--c-green);
+          }
+        }
+
+        &:hover {
+          .invert {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          }
+        }
+      }
     </style>
   </head>
   <body>
@@ -29,7 +91,7 @@ import Nav from '../components/Nav/index.jsx';
     <div class="wrapper">
       <h1>About Daniel</h1>
       <div class="heroImg">
-        <img width="1400" height="350" src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75" />
+        <img width="1400" height="350" src="/assets/billiardballs.png" />
       </div>
       <div class="bio wrapper wrapper__readable mt8">
       <p>Hello - I'm Daniel.</p><p>I am an enthusiastic software engineer who is eager to talk all things tech. Most of my time is spent learning technologies or mentoring aspiring software engineers to reinforce my own knowledge whilst giving back to the community. I am a self taught developer. I am happy to explain the skills I have acquired, however, I am of the mindset that my greatest skill is my ability to acquire new skills efficiently. Learning skills while undergoing 3rd party pressure, and the stressors that accompany that pressure can attenuate information retention drastically. This fact is why I believe that my learning system centered around the understanding of stress and memory is the skill that is most conducive to my success as a team member, and prospective colleague.</p>
@@ -42,6 +104,15 @@ My business interests are varied, but some areas that are most intriguing are:
 <li>Disintermediation of expensive products that are the result of eCommerce platforms lacking relatively simple yet critical business operations.</li>
 <li>Providing adequate cybersecurity for entities that are too small to afford a dedicated developer, and are in a position of rapid transition as business needs change due to the political climate.</li>
 </ul>
+
+<p> If you're interested in learning more about me and my thoughts check out my blog!</p>
+<div class="btn-wrapper">
+<a href="/blog" >
+          <span class="role">
+            ✏️ Blog <span class="invert">✏️ Blog</span>
+          </span>
+          </a>
+</div>
       </div>
     </div>
     <Footer />

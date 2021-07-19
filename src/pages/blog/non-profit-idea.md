@@ -3,7 +3,7 @@ layout: ../../layouts/mentor.astro
 title: Non-Profit Teaching Future Proof Skills to Vulnerable Demographics
 client: Self
 published-at: 2020-03-04 00:00:00
-img: /assets/facebook-developers.jpg
+img: /assets/dreamer.jpg
 description: |
   Software development has a low cost of entry, and demand is incredibly high.
 tags:

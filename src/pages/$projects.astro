@@ -18,7 +18,7 @@ export async function createCollection() {
 
 <html lang="en">
   <head>
-    <MainHead title="All Projects | Jeanine White" />
+    <MainHead title="Recent Projects | Daniel Marcotrigiano" />
     <style lang="scss">
       .grid {
         display: grid;
@@ -29,7 +29,7 @@ export async function createCollection() {
   <body>
     <Nav />
     <div class="wrapper">
-      <h1 class="title mt4 mb4">All Projects</h1>
+      <h1 class="title mt4 mb4">Recent Projects</h1>
       <div class="grid">
         {collection.data.map((project) => (
           <PortfolioPreview project={project} />

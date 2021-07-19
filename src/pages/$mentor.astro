@@ -1,0 +1,43 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Nav from '../components/Nav/index.jsx';
+import MenteePreview from '../components/MenteePreview/index.jsx';
+
+let { collection } = Astro.props;
+export async function createCollection() {
+  return {
+    async data({params}) {
+      const mentees = Astro.fetchContent('./mentor/*.md');
+      return mentees
+    },
+    pageSize: 25,
+    routes: [],
+    permalink: ({ params }) => `/tag/${params.tag}`
+  }
+}
+---
+
+<html lang="en">
+  <head>
+    <MainHead title="Recent Mentees | Daniel Marcotrigiano" />
+    <style lang="scss">
+      .grid {
+        display: grid;
+        grid-gap: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1 class="title mt4 mb4">Recent Mentees</h1>
+      <div class="grid">
+        {collection.data.map((mentee) => (
+          <MenteePreview mentee={mentee} />
+        ))}
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

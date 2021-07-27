@@ -1,38 +1,29 @@
-// import React from "react";
-// import { Canvas } from "@react-three/fiber";
-// import { AmbientLight, PlaneGeometry } from "three";
-// import { LiquidRefractionMaterial } from "./liquidMaterialShader";
 
-// export const ThreeWater = ({}) => {
-//   return (
-//     <Canvas>
-//       <pointLight position={[]} />
-//       <mesh>
-//         <sphereBufferGeometry />
-//         <meshStandardMaterial color="hotpink" />
-//       </mesh>
-//     </Canvas>
-//     // <Canvas>
-//     //   <AmbientLight />
-//     //   <PlaneGeometry />
-//     //   <LiquidRefractionMaterial />
-//     // </Canvas>
-//   );
-// };
-// export default ThreeWater;
 import ReactDOM from "react-dom";
 import React, { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { InstancedMesh } from "three";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { useTexture } from "@react-three/drei";
+import { Water } from "three/examples/jsm/objects/Water";
+import * as THREE from "three";
 
 export const ThreeWater = ({}) => {
   return (
-    <Canvas>
-      <mesh>
-        <sphereBufferGeometry />
-        <meshPhongMaterial color="blue" />
-      </mesh>
-      <ambientLight />
+    <Canvas camera={{ fov: 55, near: 1, far: 20000, position: [30, 30, 100] }}>
+      {/* <Water
+        textureHeight={10000}
+        textureWidth={10000}
+        // waterNormals={new THREE.TextureLoader().load(
+        //   "textures/waternormals.jpg",
+        //   function (texture) {
+        //     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+        //   },
+        // )}
+        sunColor={0xffffff}
+        waterColor={0x001e0f}>
+        <planeGeometry props={{ textureWidth: 10000, textureHeight: 10000 }} />
+      </Water> */}
+
+      <ambientLight intensity={3} />
     </Canvas>
   );
 };

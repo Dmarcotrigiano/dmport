@@ -1,29 +1,23 @@
 
 import ReactDOM from "react-dom";
-import React, { useRef, useState } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { useTexture } from "@react-three/drei";
-import { Water } from "three/examples/jsm/objects/Water";
+import React from "react";
+import { PerspectiveCamera } from "@react-three/drei";
+// import { Water } from "three/examples/jsm/objects/Water";
 import * as THREE from "three";
+import { AmbientLight, MeshBasicMaterial } from "three";
+import { PlaneBufferGeometry } from "three";
+import {Canvas} from '@react-three/fiber'
 
 export const ThreeWater = ({}) => {
   return (
-    <Canvas camera={{ fov: 55, near: 1, far: 20000, position: [30, 30, 100] }}>
-      {/* <Water
-        textureHeight={10000}
-        textureWidth={10000}
-        // waterNormals={new THREE.TextureLoader().load(
-        //   "textures/waternormals.jpg",
-        //   function (texture) {
-        //     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        //   },
-        // )}
-        sunColor={0xffffff}
-        waterColor={0x001e0f}>
-        <planeGeometry props={{ textureWidth: 10000, textureHeight: 10000 }} />
-      </Water> */}
+    <Canvas>
+      <PerspectiveCamera args={{fov: 55, near: 1, far: 20000, position: [0, 0, 10] }}/>
+      <mesh>
+      <PlaneBufferGeometry args={[100,100]}/>
+      <MeshBasicMaterial />
+      </mesh>
 
-      <ambientLight intensity={3} />
+      <AmbientLight intensity={3} />
     </Canvas>
   );
 };

@@ -6,7 +6,7 @@ function BlogPreview({ blog }) {
     <div className={Styles.card}>
       <div
         className={Styles.titleCard}
-        style={`background-image:url(${blog.img});`}>
+        style={{backgroundImage:url(`${blog.img}`)}}>
         <h1 className={Styles.title}>{blog.title}</h1>
       </div>
       <div className="pa3">
